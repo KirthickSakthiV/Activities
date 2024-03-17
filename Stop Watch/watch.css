@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color:orange;
+}
+
+header {
+    background-color:blue;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color:yellow;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: silver;
+}
+
+#stopwatch-container {
+    text-align: center;
+    padding: 20px;
+}
+
+#time {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#lap-times {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#settings-container {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+#settings {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+button:hover{
+    background-color: palevioletred;
+}
+
+#back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}

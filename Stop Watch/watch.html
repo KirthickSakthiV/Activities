@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="watch.css">
+    <body>
+        <header>
+            <h1>Stopwatch App</h1>
+        </header>
+    
+        <nav>
+            <a href="#" onclick="showStopwatch()">Stopwatch</a>
+            <a href="#" onclick="showSettings()">Settings</a>
+        </nav>
+    
+        <div id="stopwatch-container">
+            <div id="time">00:00:00</div>
+            <div id="buttons">
+                <button onclick="startStopwatch()">Start</button>
+                <button onclick="pauseStopwatch()">Pause</button>
+                <button onclick="resetStopwatch()">Reset</button>
+                
+            </div>
+            <div id="lap-times"></div>
+        </div>
+    
+        <div id="settings-container">
+            <div id="settings">Settings Page</div>
+            <!-- Add your settings content here -->
+            <button id="back-button" onclick="showStopwatch()">Back to Stopwatch</button>
+        </div>
+        <script src="watch.js"></script>
+</body>
+</html>
