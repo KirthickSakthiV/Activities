@@ -1,0 +1,58 @@
+Project - 6 - C++ - Algorithm Visualizer
+
+
+
+
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <chrono>
+#include <thread>
+
+
+void displayArray(const std::vector<int>& arr) {
+    for (int num : arr) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+}
+
+
+void bubbleSort(std::vector<int>& arr) {
+    int n = arr.size();
+    for (int i = 0; i < n - 1; ++i) {
+        for (int j = 0; j < n - i - 1; ++j) {
+            
+            displayArray(arr);
+
+        
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+
+            if (arr[j] > arr[j + 1]) {
+                std::swap(arr[j], arr[j + 1]);
+            }
+        }
+    }
+}
+
+int main() {
+    
+    std::vector<int> arr = {64, 34, 25, 12, 22, 11, 90};
+
+  
+    std::cout << "Initial Array: ";
+    displayArray(arr);
+    std::cout << "Press Enter to start sorting...";
+    std::cin.get();
+
+    
+    bubbleSort(arr);
+
+    
+    std::cout << "Sorted Array: ";
+    displayArray(arr);
+
+    return 0;
+}
+
